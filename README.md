@@ -1,8 +1,11 @@
-# 🎮 Projeto Hands on HTML e CSS - PlayStation Store
+<h1 align="center">🎮 Projeto Hands on HTML e CSS - PlayStation Store</h1>
 
+
+<p align="center">
   <img src="https://img.shields.io/badge/Linguagens-HTML5-orange.svg" alt="Linguagens">
-  <img src="https://img.shields.io/badge/Linguagens-CSS-green.svg" alt="Linguagens">
+  <img src="https://img.shields.io/badge/Linguagens-CSS-blue.svg" alt="Linguagens">
   <img src="https://img.shields.io/badge/Framework-Bootstrap-blueviolet.svg" alt="Framework">
+</p>
 
 > Projeto acadêmico para a disciplina de "Hands on HTML e CSS", focado na criação de um clone funcional e responsivo da interface da PlayStation Store. O site possui múltiplas páginas com temas dinâmicos que se adaptam ao jogo em destaque.
 
