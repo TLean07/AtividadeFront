@@ -53,3 +53,56 @@ Este projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
 ### 📁 Estrutura de Arquivos
 
 A estrutura do projeto foi organizada da seguinte forma para manter o código limpo e modular.
+
+```
+seu-projeto/
+├── index.html              # Página principal (Home)
+├── README.md               # Este arquivo
+└── src/
+├── css/
+│   └── style.css       # Folha de estilo principal
+└── pages/
+├── jogo3.html      # Página do Cyberpunk 2077
+├── fortnite.html   # Página do Fortnite
+└── lies-of-p.html  # Página do Lies of P
+```
+
+---
+
+### 🔧 Como Executar o Projeto
+
+Este é um projeto estático e não requer um servidor complexo ou instalação de dependências. Todas as bibliotecas externas (Bootstrap, Font Awesome, Google Fonts) são importadas via **CDN (Content Delivery Network)**, o que simplifica a execução.
+
+1.  **Clone o repositório (ou baixe os arquivos):**
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    ```
+
+2.  **Abra o arquivo principal:**
+    Navegue até a pasta do projeto e abra o arquivo `index.html` no seu navegador de preferência (Google Chrome, Firefox, etc.).
+
+    ```bash
+    # Exemplo no Windows
+    start index.html
+
+    # Exemplo no macOS
+    open index.html
+    ```
+
+💡 **Dica Profissional:** Para uma melhor experiência de desenvolvimento, recomendamos usar a extensão **Live Server** no Visual Studio Code, que atualiza a página automaticamente a cada alteração no código.
+
+---
+
+### 👨‍💻 Autores
+
+Este projeto foi desenvolvido com dedicação pela seguinte equipe:
+
+| Nome Completo | Turma | RM |
+| :--- | :---: | :---: |
+| Leandro Afonso Silva Santos Junior | 1ESA | 561344 |
+| Guilherme Barone Milani | 1ESA | 562114 |
+| Luigi Escudero Grigoletto | 1ESA | 562505 |
+
+---
+
+> Desenvolvido em 2025 para fins acadêmicos.
