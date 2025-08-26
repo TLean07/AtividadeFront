@@ -60,7 +60,7 @@ Este projeto foi construído utilizando as seguintes tecnologias e bibliotecas:
 A estrutura do projeto foi organizada da seguinte forma para manter o código limpo e modular.
 
 ```
-seu-projeto/
+AtividadeFront/
 ├── index.html              # Página principal (Home)
 ├── README.md               # Este arquivo
 └── src/
