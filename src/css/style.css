@@ -1,0 +1,535 @@
+/*-----------------------------------------------------
+# ESTILOS GERAIS E RESET
+-----------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B0F1A; 
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0070d1;
+}
+
+/*-----------------------------------------------------
+# HEADER (CABEÇALHO)
+-----------------------------------------------------*/
+
+.main-header {
+    background-color: #151A26;
+    padding: 15px 0;
+    border-bottom: 1px solid #2a2f3b;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/*-----------------------------------------------------
+# PÁGINA PRINCIPAL (index.html)
+-----------------------------------------------------*/
+
+.content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-left: 5px solid #0070d1;
+    padding-left: 15px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.game-card-link {
+    display: block;
+}
+
+.game-card {
+    background-color: #151A26;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 112, 209, 0.3);
+}
+
+.game-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; 
+}
+
+.game-card .card-body {
+    padding: 15px;
+}
+
+.game-card h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.game-card p {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+/*-----------------------------------------------------
+# PÁGINA DO JOGO (jogo3.html - Cyberpunk)
+-----------------------------------------------------*/
+
+.cyberpunk-bg {
+    background-image: linear-gradient(rgba(11, 15, 26, 0.9), rgba(11, 15, 26, 1)), url('https://cdn-ext.fanatical.com/production/product/1280x720/6df95293-96b0-4638-b118-a6d1230e55d5.jpeg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.game-page-content {
+    padding-top: 50px;
+}
+
+.game-details {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.game-cover img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.game-info {
+    flex: 1; 
+}
+
+.game-info h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #FCEE0A; 
+    text-shadow: 2px 2px 10px rgba(252, 238, 10, 0.5);
+}
+
+.game-info .developer {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.game-info .description {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.price-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.buy-button {
+    background-color: #FCEE0A; 
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    background-color: #e8d909;
+}
+
+/*-----------------------------------------------------
+# PÁGINA DO JOGO (Fortnite)
+-----------------------------------------------------*/
+
+.fortnite-bg {
+    background-image: linear-gradient(rgba(11, 15, 26, 0.9), rgba(11, 15, 26, 1)), url('https://static1.srcdn.com/wordpress/wp-content/uploads/2023/12/fortnite-chapter-5-season-1-map.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fortnite-bg .game-info h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #8c1eff; 
+    text-shadow: 2px 2px 10px rgba(140, 30, 255, 0.5);
+}
+
+.fortnite-bg .buy-button {
+    background-color: #8c1eff; 
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.fortnite-bg .buy-button:hover {
+    background-color: #7a1ad1;
+}
+
+.extra-content {
+    margin-top: 60px;
+    background-color: rgba(21, 26, 38, 0.7); 
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #2a2f3b;
+}
+
+.extra-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8c1eff;
+    display: inline-block;
+}
+
+.mode-item {
+    margin-bottom: 20px;
+}
+
+.mode-item h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.mode-item p {
+    color: #c0c0c0;
+    line-height: 1.6;
+}
+
+/*-----------------------------------------------------
+# PÁGINA DO JOGO (Lies of P)
+-----------------------------------------------------*/
+
+.liesofp-bg {
+    background-image: linear-gradient(rgba(11, 15, 26, 0.9), rgba(11, 15, 26, 1)), url('https://images.alphacoders.com/132/1325327.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.liesofp-bg .game-info h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: darkred;
+    text-shadow: 2px 2px 10px rgba(231, 11, 11, 0.4);
+}
+
+.liesofp-bg .buy-button {
+    background-color: darkred;
+    color: #111; 
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.liesofp-bg .buy-button:hover {
+    background-color: darkred;
+}
+
+.liesofp-bg .extra-content h2 {
+    border-bottom: 2px solid darkred;
+}
+
+.feature-item {
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.feature-item p {
+    color: #c0c0c0;
+    line-height: 1.6;
+}
+
+/*-----------------------------------------------------
+# DESIGN RESPONSIVO
+-----------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .game-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-info h1 {
+        font-size: 2.5rem;
+    }
+
+    .price-section {
+        justify-content: center;
+    }
+}
+
+/*-----------------------------------------------------
+# HEADER (MODIFICADO)
+-----------------------------------------------------*/
+
+.main-header {
+    background-color: #151A26;
+    padding: 15px 0;
+    border-bottom: 1px solid #2a2f3b;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 35px; 
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.logo i:hover {
+    color: #0070d1; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/*-----------------------------------------------------
+# FOOTER (NOVO)
+-----------------------------------------------------*/
+
+.main-footer {
+    background-color: #151A26;
+    color: #a0a0a0;
+    padding: 30px 0;
+    margin-top: 50px; 
+    border-top: 1px solid #2a2f3b;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.footer-logo i {
+    font-size: 28px;
+    color: #fff;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+.footer-links {
+    margin-top: 5px;
+}
+
+.footer-links a {
+    color: #a0a0a0;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-links span {
+    color: #444;
+}
+
+/*-----------------------------------------------------
+# DESIGN RESPONSIVO (Ajuste para o Footer)
+-----------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .region {
+        margin-top: 10px;
+    }
+}
+/*-----------------------------------------------------
+# PÁGINA DO JOGO (jogo2.html - Lies of P)
+-----------------------------------------------------*/
+.liesofp-bg {
+    background-image: linear-gradient(rgba(11, 15, 26, 0.9), rgba(11, 15, 26, 1)), url('https://cdn-ext.fanatical.com/production/product/1280x720/6df95293-96b0-4638-b118-a6d1230e55d5.jpeg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.game-page-content {
+    padding-top: 50px;
+}
+
+.game-details {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.game-cover img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.game-info {
+    flex: 1; 
+}
+
+.game-info h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #FCEE0A; 
+    text-shadow: 2px 2px 10px rgba(252, 238, 10, 0.5);
+}
+
+.game-info .developer {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.game-info .description {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.price-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.buy-button {
+    background-color: #FCEE0A; 
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.buy-button:hover {
+    background-color: #e8d909;
+}
+
