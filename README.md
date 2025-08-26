@@ -75,7 +75,7 @@ Este é um projeto estático e não requer um servidor complexo ou instalação 
 
 1.  **Clone o repositório (ou baixe os arquivos):**
     ```bash
-    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    git clone https://github.com/TLean07/AtividadeFront.git
     ```
 
 2.  **Abra o arquivo principal:**
