@@ -63,8 +63,8 @@ seu-projeto/
 │   └── style.css       # Folha de estilo principal
 └── pages/
 ├── jogo3.html      # Página do Cyberpunk 2077
-├── fortnite.html   # Página do Fortnite
-└── lies-of-p.html  # Página do Lies of P
+├── jogo1.html      # Página do Fortnite
+└── jogo2.html      # Página do Lies of P
 ```
 
 ---
